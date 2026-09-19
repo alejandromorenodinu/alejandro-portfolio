@@ -6,6 +6,9 @@ import brooks_img from '../assets/brooks.png';
 import motherload_img from '../assets/motherload.png';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
+import { Link } from 'react-router-dom';
+
+const MotionLink = motion.create(Link);
 
 function Presentation() {
     return (
@@ -19,10 +22,11 @@ function Presentation() {
                             'Em dic Alejandro Moreno', 2000,
                             'Me llamo Alejandro Moreno', 2000]} wrapper="h1" className='hero-h1'></TypeAnimation>
                         <p className="hero-p">Full-stack Developer</p>
-                        <motion.button 
+                        <MotionLink 
+                            to="/about"
                             whileHover={{scale: 1.1}} 
                             transition={{duration: 0.3}} 
-                            className='hero-button'>Conoceme</motion.button>
+                            className='hero-button'>Conoceme</MotionLink> 
                     </div>
                 </div>
                 <div>
