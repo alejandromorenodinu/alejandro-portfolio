@@ -297,15 +297,25 @@ td {
     margin: 0;
 }
 
+.project-page-picture {
+    flex: 0 0 55%;
+    align-self: flex-start;
+    overflow: hidden;
+    border-radius: 2ch;
+    background-color: var(--bg-card);
+}
+
 .project-page-picture img,
 .project-page-picture video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: 2ch;
 }
 
 .project-info {
-    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
 }
 
 .project-page-grid {
@@ -362,6 +372,15 @@ td {
 .project-page-tag[data-tag="Aseprite"] { background-color: #7b7088; }
 .project-page-tag[data-tag="Angular"] { background-color: #cb0081; }
 .project-page-tag[data-tag="API RES"] { background-color: #3b492d; }
+
+a {
+    color: var(--red-dark);
+    text-decoration: none;
+}
+
+.media-box {
+    width: 1920px;
+}
 
 /* About */
 

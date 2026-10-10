@@ -51,9 +51,9 @@ function Projects() {
                 <div className='project-page-container'>
                     <div className='project-page-picture'>
                         {projects[selected].mediaFormat === 'video' ? (
-                            <video src={projects[selected].pic} controls />
+                            <video src={projects[selected].pic} controls className='media-box'/>
                         ) : (
-                            <img src={projects[selected].pic} alt={projects[selected].title}/>
+                            <img src={projects[selected].pic} alt={projects[selected].title} className='media-box'/>
                         )}
                     </div>
                     <div className='project-info'>
@@ -62,7 +62,7 @@ function Projects() {
                         <p>{projects[selected].desc}</p>
                         {projects[selected].links.map((link) => (
                         <a key={link} href={link} target="_blank" rel="noreferrer">
-                            {link}
+                            Visitar
                         </a>
                         ))}
                     </div>
