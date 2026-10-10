@@ -3,6 +3,7 @@ import '../index.css';
 import brooks_img from '../assets/brooksseals_project.png';
 import motherload_vid from '../assets/motherload_trailer.mp4';
 import motherload_card from '../assets/motherload.png';
+import yemdivers_card from '../assets/yemdivers.png';
 import brooks_card from '../assets/brooks.png';
 
 type project = {
@@ -22,6 +23,9 @@ function Projects() {
         {title: 'Motherload', 
         desc: 'Motherload es un videojuego desarrollado en equipo con mis compañeros de clase como proyecto final de mi formación en DAM con especialización en Videojuegos. Está hecho en Unity con C# y me permitió trabajar en un proyecto completo, desde la idea inicial hasta una versión jugable, colaborando con programadores y artistas.',
         pic: motherload_vid,  mediaFormat: 'video'},
+        {title: 'Yemdivers Companion App', 
+            desc: 'Yemdivers Companion es un proyecto personal desarrollado con Angular para los jugadores de Helldivers 2. Nació de una idea sencilla: tener a mano, en una sola web, todo lo que un Helldiver necesita saber sobre la guerra galáctica sin tener que abrir el juego. La aplicación muestra estadísticas de la guerra, las órdenes del Alto Mando y el estado de las campañas en curso, para que cualquier jugador sepa en qué frente se necesita su ayuda y cómo avanza el esfuerzo de la comunidad. Con este proyecto he trabajado con Angular y TypeScript, he diseñado una interfaz pensada para consultar información de forma rápida y clara, y he configurado un despliegue automático en GitHub Pages mediante GitHub Actions. <a href="https://alejandromorenodinu.github.io/yemdivers-companion/">https://alejandromorenodinu.github.io/yemdivers-companion/</a>',
+        pic: brooks_img, mediaFormat: 'image'},
     ];
 
     function ChooseProject(index: number) {
@@ -60,7 +64,7 @@ function Projects() {
                             <span className='project-page-tag' data-tag={'PHP'}>{'PHP'}</span>
                             <span className='project-page-tag' data-tag={'JavaScript'}>{'JavaScript'}</span>
                         </div>
-                        <p>Mi primer proyecto profesional. Brooks Seals es una pagina basada en Wordpress</p>
+                        <p>Mi primer proyecto profesional. Brooks Seals es una pagina basada en Wordpress.</p>
                         <button onClick={ChooseProject(0)}>Ver proyecto</button>
                     </div>
                     <div className='project-page-card'>
@@ -72,8 +76,20 @@ function Projects() {
                             <span className='project-page-tag' data-tag={'Blender'}>{'Blender'}</span>
                             <span className='project-page-tag' data-tag={'Aseprite'}>{'Aseprite'}</span>
                         </div>
-                        <p>Videojuego desarrollado por 3 personas para proyecto de final de curso. Hecho en Unity</p>
+                        <p>Videojuego desarrollado por 3 personas para proyecto de final de curso. Hecho en Unity.</p>
                         <button onClick={ChooseProject(1)}>Ver proyecto</button>
+                    </div>
+                    <div className='project-page-card'>
+                        <img src={yemdivers_card}></img>
+                        <h3>Yemdivers Companion App</h3>
+                        <div className='projecte-page-tag-container'>
+                            <span className='project-page-tag' data-tag={'Angular'}>{'Angular'}</span>
+                            <span className='project-page-tag' data-tag={'TypeScript'}>{'TypeScript'}</span>
+                            <span className='project-page-tag' data-tag={'JavaScript'}>{'JavaScript'}</span>
+                            <span className='project-page-tag' data-tag={'API RES'}>{'API RES'}</span>
+                        </div>
+                        <p>Aplicacion web hecha en Angular.</p>
+                        <button onClick={ChooseProject(2)}>Ver proyecto</button>
                     </div>
                 </div>
         </main>

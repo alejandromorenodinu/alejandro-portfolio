@@ -2,11 +2,12 @@ import '../index.css';
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import pfp from '../assets/alejandro.png';
-import brooks_img from '../assets/brooks.png';
-import motherload_img from '../assets/motherload.png';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
 import { Link } from 'react-router-dom';
+import brooks_img from '../assets/brooks.png';
+import motherload_img from '../assets/motherload.png';
+import yemdivers_img from '../assets/yemdivers.png';
 
 const MotionLink = motion.create(Link);
 
@@ -78,6 +79,13 @@ function Presentation() {
                                 </div>
                                 <p>Videojuego hecho en Unity</p>
                                 <img src={motherload_img} className='project-picture'></img>
+                            </div>
+                            <div className='project-card'>
+                                <div className='project-card-title-yemdivers'>
+                                    <h3>Yemdivers Companion</h3>
+                                </div>
+                                <p>Companion App hecho en Angular</p>
+                                <img src={yemdivers_img} className='project-picture'></img>
                             </div>
                         </div>
                         <br></br>

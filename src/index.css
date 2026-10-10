@@ -251,6 +251,17 @@ td {
     color: var(--text-primary)
 }
 
+
+.project-card-title-yemdivers {
+    background-color: #ffe100;
+    text-align: center;
+    margin: 1%;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+    color: var(--text-primary)
+}
+
 .project-card {
     background-color: var(--bg-card);
     text-align: center;
@@ -346,8 +357,11 @@ td {
 .project-page-tag[data-tag="WordPress"] { background-color: #21759b; }
 .project-page-tag[data-tag="PHP"] { background-color: #572d7d; }
 .project-page-tag[data-tag="JavaScript"] { background-color: #ffc82f; color: #000000;  }
+.project-page-tag[data-tag="TypeScript"] { background-color: #6f7dff; }
 .project-page-tag[data-tag="Blender"] { background-color: #df6100; }
 .project-page-tag[data-tag="Aseprite"] { background-color: #7b7088; }
+.project-page-tag[data-tag="Angular"] { background-color: #cb0081; }
+.project-page-tag[data-tag="API RES"] { background-color: #3b492d; }
 
 /* About */
 
